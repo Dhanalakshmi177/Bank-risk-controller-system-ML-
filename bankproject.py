@@ -10,7 +10,7 @@ import re
 df = pd.read_csv("C:/Users/LENOVO/Desktop/Files/Datae2.csv")
 df1=pd.read_csv("C:/Users/LENOVO/Desktop/Files/mydat1.csv")
 df2=pd.read_csv("C:/Users/LENOVO/Desktop/Files/finaldat1.csv")
-#dfg=pd.read_csv("C:/Users/LENOVO/Desktop/Files/Datt.csv")
+
 
 # --------------------------------------------------Logo & details on top
 
@@ -347,6 +347,66 @@ def visual():
 
 
 visual()
+
+def about():
+     if opt=="About":
+        
+          
+        st.markdown(f"### ABOUT")
+        st.markdown(f"#### :orange[***In the financial industry, assessing the risk of customer default is crucial for maintaining a healthy credit portfolio. Default occurs when a borrower fails to meet the legal obligations of a loan. Accurate prediction of default can help financial institutions mitigate risks, allocate resources efficiently, and develop strategies to manage potentially delinquent accounts. This project aims to develop a predictive model to determine the likelihood of customer default using historical data.***]")
+        st.markdown(f"### DATA DESCRIPTION")
+        st.markdown(f"#### ***The dataset provided contains multiple features that may influence the likelihood of a customer defaulting on a loan. These features include:*** ")
+        st.write(" ")
+        col11,col12=st.columns([3,5],gap="large")
+        with col12:
+            st.markdown(f"#### :orange[***Personal Information:***] Age, gender, marital status, etc.")
+            st.markdown(f"#### :orange[***Credit History:***] Previous loan defaults, credit score, number of open credit lines, etc.")
+            st.markdown(f"#### :orange[***Financial Status:***] Annual income, current debt, loan amount, etc.")
+            st.markdown(f"#### :orange[***Employment Details:***] Employment status, length of employment, etc. The target variable 0: No default 1: Default")
+            
+        with col11:
+            st.write(" ")
+            st.write(" ")
+            st.image("risk.jpg")
+        st.write(" ")
+        st.write(" ")
+        st.markdown(f"### CONCLUSION")
+        st.write(" ")
+        st.markdown(f"#### :orange[***The expected outcome of this project is a robust predictive model that can accurately identify customers who are likely to default on their loans. This will enable the financial institution to proactively manage their credit portfolio, implement targeted interventions, and ultimately reduce the risk of loan defaults.***]")
+
+
+
+        col13,col14=st.columns([15,10],gap="large")
+        
+        st.write(" ")
+        
+        col13,col14=st.columns([3,5],gap="large")
+        with col14:
+            st.image("bank.jpg")
+            
+
+        with col13:
+             st.write(" ")
+
+        st.write(" ")
+        st.write(" ")
+
+        co,coo=st.columns([3,7],gap="small")
+        with coo:
+           st.markdown(f"#### *Feel free to delve into the project on my GitHub repository* ")
+        with co:
+             st.write(" ")
+
+        col15,col16=st.columns([7,9],gap="large")
+        with col16:
+            
+             st.link_button("# :violet[**GITHUB**]","https://github.com/Dhanalakshmi177/Bank-risk-controller-system-ML-")
+        with col15:
+             st.write(" ")
+             
+
+about()
+
 
 
 
